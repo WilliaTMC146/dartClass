@@ -27,6 +27,7 @@ void main(List<String> arguments) {
   print("Dosen Tamu");
 
   print(" ");
+  print(" ");
   print("Mahasiswa");
   mh1.Status();
 }
