@@ -9,6 +9,18 @@ class Dosen {
 
   Dosen(this.nama, this.sksAmpu, this.status, this.primarySalary,
       this.supportSalary);
+
+  void test() {
+    print("Dosen");
+  }
+
+  void Status() {
+    int total = supportSalary + (salaryPerSks * sksAmpu);
+    print("Nama: ${nama}");
+    print("SKS Ampu: ${sksAmpu} sks");
+    print("Status: ${status}");
+    print("Total Income: ${total}");
+  }
 }
 
 class DosenTamu extends Dosen {
@@ -17,7 +29,7 @@ class DosenTamu extends Dosen {
   DosenTamu(String? nama, int sksAmpu, String status, int primarySalary,
       int supportSalary)
       : super(nama, sksAmpu, status, primarySalary, supportSalary) {
-    this.supportSalary = supportSalary;
+    this.supportSalary = supportSalary + (salaryPerSks * sksAmpu);
   }
 
   void Status() {
